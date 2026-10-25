@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developers.openai.com/plugins/marketplace.schema.json",
+  "name": "project-docs-marketplace",
+  "interface": { "displayName": "Project Docs" },
+  "plugins": [
+    {
+      "name": "project-docs",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Fengerss/project-docs-skill.git",
+        "ref": "main"
+      },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "project-docs-marketplace",
+  "description": "Fengers project documentation plugins.",
+  "owner": { "name": "Fengers" },
+  "plugins": [
+    {
+      "name": "project-docs",
+      "source": "./",
+      "description": "Write and maintain concise, accurate project documentation."
+    }
+  ]
+}

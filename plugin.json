@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "project-docs",
+  "version": "0.1.0",
+  "description": "Create, update, and review concise, accurate project documentation.",
+  "author": { "name": "Fengers" },
+  "repository": "https://github.com/Fengerss/project-docs-skill",
+  "keywords": ["documentation", "architecture", "glossary", "adr"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Project Docs",
+        "shortDescription": "Write and maintain clear project docs"
+      }
+    }
+  }
+}
