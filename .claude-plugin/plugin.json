@@ -3,6 +3,10 @@
   "displayName": "Project Docs",
   "version": "0.1.0",
   "description": "Create, update, and review concise, accurate project documentation.",
-  "author": { "name": "Fengers" },
-  "repository": "https://github.com/Fengerss/project-docs-skill"
+  "author": {
+    "name": "Fengers"
+  },
+  "repository": "https://github.com/Fengerss/project-docs-skill",
+  "icon": "./assets/icon.png",
+  "license": "MIT"
 }

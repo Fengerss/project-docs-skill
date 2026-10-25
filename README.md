@@ -1,26 +1,38 @@
-# Project Docs Plugin 草稿
+# Project Docs
 
-一个用于新建、更新和审查项目文档的 Codex / Claude Code 插件。核心技能会先核对项目现状，帮助写出简洁、准确、易读的文档，并将当前状态与 ADR 决策历史分开。
+一个面向 Codex 和 Claude Code 的项目文档插件。它帮助新建、更新和审查项目说明、架构/设计文档、规则与术语表：先核对代码和现有资料，再写清晰、精简、准确的当前状态；需要保留的长期决策单独记录为 ADR。
 
-本项目仍在修改阶段。英文技能入口位于 skills/project-docs/SKILL.md；中文对照稿在 docs/SKILL.zh-CN.md。
+## 包含内容
 
-## Codex
+- `skills/project-docs/SKILL.md`：Codex 与 Claude Code 共用的技能入口。
+- `docs/SKILL.zh-CN.md`：中文阅读稿。
+- `.agents/plugins/marketplace.json`：Codex marketplace 清单。
+- `.claude-plugin/plugin.json`、`.claude-plugin/marketplace.json`：Claude Code 插件和 marketplace 清单。
 
-在 Codex 插件界面 /plugins 添加 GitHub marketplace Fengerss/project-docs-skill，选择并安装 Project Docs，然后新开会话。
+## 安装到 Codex
 
-CLI：
+在 Codex 桌面插件页添加 GitHub 来源 `Fengerss/project-docs-skill` 并安装 **Project Docs**。Codex CLI 可运行：
+
+```sh
 codex plugin marketplace add Fengerss/project-docs-skill
 codex plugin add project-docs@project-docs-marketplace
+```
 
-## Claude Code
+## 安装到 Claude Code
 
+```sh
 claude plugin marketplace add Fengerss/project-docs-skill
 claude plugin install project-docs@project-docs-marketplace
+```
 
-开发时也可从克隆目录临时加载：claude --plugin-dir .
+开发时可以从克隆目录临时加载：
 
-技能命令：/project-docs:project-docs
+```sh
+claude --plugin-dir .
+```
 
-## 仓库可见性
+Claude Code 中可通过 `/project-docs:project-docs` 显式调用。
 
-GitHub 仓库当前为私有。安装和更新的人都需要有该仓库的访问权限，并在对应客户端完成 GitHub 认证。
+## 许可
+
+本项目采用 MIT License，详见 `LICENSE`。
