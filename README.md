@@ -10,6 +10,7 @@
 
 CLI：
 codex plugin marketplace add Fengerss/project-docs-skill
+codex plugin add project-docs@project-docs-marketplace
 
 ## Claude Code
 
