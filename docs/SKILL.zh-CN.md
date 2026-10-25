@@ -6,7 +6,7 @@
 
 | 你的需求 | 使用哪个 skill |
 | --- | --- |
-| 文档放在哪里、哪些仍有效、怎样建索引、如何归档 | [project-docs](../skills/project-docs/SKILL.md) |
+| 修订与重构文档、收敛重叠目录、维护索引与归档 | [project-docs](../skills/project-docs/SKILL.md) |
 | README、教程、架构、设计、规格或项目状态让人看得懂 | [project-docs-human](../skills/project-docs-human/SKILL.md) |
 | AI 的执行计划、任务交接、工作记录和验证细节 | [project-docs-agent](../skills/project-docs-agent/SKILL.md) |
 
@@ -25,7 +25,7 @@
 
 ## 典型请求
 
-- “整理这个项目的文档，保留主题目录，维护 `docs/README.md`，处理已经失效的计划并修复引用。”
+- “整理并重构这个项目的文档，合并重复内容，维护 `docs/README.md`，归档失效计划并修复引用。”
 - “更新现有架构说明，让新成员理解模块职责和已确认的取舍；不复制数据契约。”
 - “收敛 AI 工作记录，只留下已核实的完成情况、当前阻塞、下一步和必要资料入口。”
 - “计划做了一半但方向变了，请区分实际完成、取消和仍需继续的事项，更新工作入口后归档旧计划。”
