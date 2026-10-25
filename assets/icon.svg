@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Project Docs</title>
+  <rect width="512" height="512" fill="#174c3c"/>
+  <path d="M154 72H310L388 150V414A28 28 0 0 1 360 442H154A28 28 0 0 1 126 414V100A28 28 0 0 1 154 72Z" fill="#f4f7f2"/>
+  <path d="M310 72V138A12 12 0 0 0 322 150H388Z" fill="#bcd9c8"/>
+  <path d="M176 202H336V220H176ZM176 250H336V268H176ZM176 298H296V316H176Z" fill="#397b5e"/>
+  <path d="M194 374L226 400L302 340" fill="none" stroke="#174c3c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

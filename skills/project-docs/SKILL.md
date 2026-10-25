@@ -1,34 +1,22 @@
 ---
 name: project-docs
 description: >-
-  Create, update, and review repository documentation, especially project guides,
-  architecture and design docs, rules, and glossaries. Use when documentation must
-  reflect verified project facts and stay readable and concise.
+  Organize project documentation: consolidate duplicates, maintain docs/README.md,
+  repair references, and archive inactive working records. Use for documentation
+  structure and lifecycle maintenance; use the writing skills for substantial
+  content changes.
 ---
 
-# Project Docs
+# Organize Project Documentation
 
-Help people and future contributors understand the project through a small, accurate set of documents. Follow repository-specific conventions when they exist.
+Read the [shared conventions](references/conventions.md).
 
-## Establish the facts
+1. Inspect the affected documents and their references. Identify purpose, readers, status, authoritative sources, and any unique content before merging or removing files.
+2. Keep useful topic-based organization and existing names. Create directories only when needed; apply the shared principles to decide what to retain, consolidate, or retire.
+3. Maintain `docs/README.md` as a curated set of current entry points with purpose, readers, and status where useful. Link it from the root README when appropriate; add local indexes only when navigation becomes difficult.
+4. Move useful inactive records into the relevant topic's archive, reusing its existing naming convention. Record the archive date, reason, and replacement when applicable; apply the shared direction-change rules before retiring plans.
+5. Repair incoming links and current work pointers after moves or replacements. Preserve references needed to trace historical decisions.
 
-- Read relevant project guidance and existing documentation first; inspect source code, configuration, tests, or other authoritative materials to verify claims.
-- Identify the intended reader and what they need to learn or do. If that is unclear and changes the content materially, ask; otherwise make a reasonable choice and state it briefly.
-- Describe current, verified behavior and structure. Mark unresolved details as unverified instead of filling gaps with guesses.
+Use `project-docs-human` for substantial human-facing writing and `project-docs-agent` for AI working documents. A writing-only task does not require reorganizing the repository.
 
-## Write for people
-
-- Lead with the purpose and practical information. Prefer clear language, explain necessary terms, and include only the architecture or implementation detail needed by the reader.
-- Create the smallest useful document set. Use the README as a concise entry point when the project has one; link to focused pages only when they add value.
-- Keep each fact in one authoritative place. Avoid duplicated explanations, task diaries, speculative plans, and lengthy lists of prohibitions or caveats.
-
-## Keep current state separate from history
-
-- Keep active project guides and architecture docs focused on how the project works now. Do not turn them into change logs or preserve superseded approaches as if they were current.
-- When a lasting decision or its trade-offs need preserving, record it separately as an ADR or in the repository's existing decision-history format, then link to it only where useful. Do not create a decision record for every routine change.
-
-## Review and maintain
-
-- Compare existing documentation with the verified project state. Correct stale claims and broken links; consolidate clear duplication without rewriting unrelated material.
-- For project overviews, architecture/design docs, rules, or glossaries, choose a structure that serves the reader rather than forcing every document into one template.
-- After editing, recheck changed claims and links against their sources. Report the files changed and any material facts that remain unverified.
+Verify changed claims and references, then report the changes and important unknowns. Keep changes within the requested documentation scope.

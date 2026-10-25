@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-docs",
-  "version": "0.1.0",
-  "description": "Create, update, and review concise, accurate project documentation.",
+  "version": "0.2.0",
+  "description": "Organize project docs and write focused guidance for people and AI agents.",
   "author": {
     "name": "Fengers"
   },
