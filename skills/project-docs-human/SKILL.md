@@ -11,7 +11,9 @@ description: >-
 Read the [shared conventions](../project-docs/references/conventions.md).
 
 - Identify what the reader needs to understand or do. Ask only when missing information materially changes the result.
-- Keep documents concise and easy to read. Lead with conclusions or actions; use plain language, explain necessary terms, and connect technical details to their implications. Remove repetition and irrelevant background while preserving essential context and limitations.
+- Lead with conclusions, key changes, or actions so readers can grasp the main points on a skim.
+- Keep each paragraph focused on one main point. Use lists for parallel findings, conditions, problems, or recommendations, and numbered lists for ordered steps. Start each item with a concise takeaway, then add the explanation or evidence it needs. Keep causal explanations in short paragraphs.
+- Use plain language, explain necessary terms, and connect technical details to their implications. Remove repetition and irrelevant background while preserving essential context, conditions, evidence, and limitations.
 - When revising, simplify and reorganize the body itself; add an overview or reading guide only when navigation still needs one.
 - Explain responsibilities, relationships, and reasons in design documents; provide usable steps and expected results in guides. Choose the structure for the reader rather than forcing a template.
 - Summarize current status through verified milestones, outcomes, and meaningful blockers. Keep task execution detail in working records.
