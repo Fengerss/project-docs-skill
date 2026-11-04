@@ -11,8 +11,9 @@ description: >-
 Read the [shared conventions](../project-docs/references/conventions.md).
 
 - Identify what the reader needs to understand or do. Ask only when missing information materially changes the result.
-- Lead with conclusions, key changes, or actions so readers can grasp the main points on a skim.
-- Keep each paragraph focused on one main point. Use lists for parallel findings, conditions, problems, or recommendations, and numbered lists for ordered steps. Start each item with a concise takeaway, then add the explanation or evidence it needs. Keep causal explanations in short paragraphs.
+- Lead with a brief conclusion, outcome, key change, or action so readers can grasp the main point on a skim.
+- Extract parallel findings, conditions, problems, or recommendations into scannable bullets. Choose the number of items to suit the content, without a fixed count. Each item should make one point, starting with a concise takeaway and adding only the explanation or evidence it needs. Use numbered lists for ordered steps.
+- Add a short explanatory paragraph after the key points when it helps connect causes, relationships, or context. Keep each paragraph focused on one main point and add information rather than repeating the list.
 - Use plain language, explain necessary terms, and connect technical details to their implications. Remove repetition and irrelevant background while preserving essential context, conditions, evidence, and limitations.
 - When revising, simplify and reorganize the body itself; add an overview or reading guide only when navigation still needs one.
 - Explain responsibilities, relationships, and reasons in design documents; provide usable steps and expected results in guides. Choose the structure for the reader rather than forcing a template.
