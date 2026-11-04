@@ -20,3 +20,16 @@ Read the [shared conventions](../project-docs/references/conventions.md).
 - Summarize current status through verified milestones, outcomes, and meaningful blockers. Keep task execution detail in working records.
 
 Check changed claims, examples, and links against their sources. Update the relevant entry point if navigation changes, and report important facts that remain unverified.
+
+## Example
+
+Fictional report section; adapt the structure and number of points to the content.
+
+```markdown
+**The trial improved matching accuracy, with slower responses.**
+
+- **Accuracy:** Correct matches rose from 8/10 to 9/10 on the same test set.
+- **Speed:** Average response time rose from one to two seconds.
+
+The new flow performs an extra lookup, which explains the delay. Before adopting it, decide whether the accuracy gain justifies the extra wait.
+```
