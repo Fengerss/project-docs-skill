@@ -15,9 +15,26 @@ Read the [shared conventions](references/conventions.md).
 2. Compare directories with similar purposes by content and references. Present the differences and a recommended destination, then ask which directory to keep before merging unless the user has already chosen. Reuse useful topic-based organization and create directories only when needed.
 3. Consolidate overlapping files into one maintained version, carrying over unique valid content. Revise outdated explanations and confusing structure against verified sources.
 4. Move inactive documents worth retaining into the topic's archive, unless fixed-path consumers or sealed references require keeping them in place; identify such retained historical material in navigation. For mixed documents, preserve valid definitions, archive useful obsolete sections, and replace outdated action instructions in the body itself with current guidance and links to history. If a mostly obsolete document still serves a current purpose, archive its original before rewriting at the maintained path. Preserve enough context to understand archived material, reuse existing archive names, and record the date, reason, and replacement when applicable; apply the shared direction-change rules before retiring plans.
-5. Maintain `docs/README.md` as a concise guide to current entry points, with purpose, readers, and status where useful. Group historical navigation behind existing topic or archive entry points. Link from the root README when appropriate; add local indexes only when navigation becomes difficult.
+5. After consolidation or archiving, update history links in the owning maintained documents. Keep `docs/README.md` a concise guide to document entry points, and link from the root README when appropriate.
 6. Repair incoming links, affected file consumers, and current work pointers, then remove emptied duplicate directories. Keep old-path redirects only where references cannot be updated; preserve references needed to trace historical decisions.
 
 Use `project-docs-human` or `project-docs-agent` as appropriate to complete substantial revisions. A writing-only task does not require reorganizing the repository.
 
-Verify changed claims and links, affected file consumers, preservation of unique valid content, and consolidation of duplicate active versions. Confirm inactive records worth retaining are archived or explicitly retained in place. Follow the reader's intended routes from current entry points and confirm they reach authoritative, maintained information, with historical instructions clearly separated from current work. Report the changes and important unknowns.
+Verify changed claims and links, affected file consumers, preservation of unique valid content, and consolidation of duplicate active versions. Confirm current documents have no duplicate or superseded action sections, and inactive records worth retaining are archived or explicitly retained in place. Follow the reader's intended routes from current entry points and confirm they reach authoritative, maintained information, with historical instructions clearly separated from current work. Report the changes and important unknowns.
+
+## Example
+
+A mixed `docs/research/findings.md` contains applicable conclusions and past trials. Keep the conclusions in place, move historical detail into the topic's archive, and add a brief history entry at the end of `findings.md`. Reuse existing paths and archive names; this structure is illustrative.
+
+```text
+docs/
+├── README.md                  # Document entry points
+├── todo/
+│   ├── progress.md            # Current task and its history index
+│   └── archive/
+│       └── past-work.md       # Historical task records
+└── research/
+    ├── findings.md            # Applicable conclusions and their history index
+    └── archive/
+        └── past-experiments.md # Past trials and superseded approaches
+```
