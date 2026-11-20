@@ -13,15 +13,15 @@ Read the [shared conventions](references/conventions.md). Follow any maintenance
 Organize the documents, then set up the index and its entry points in the project's agent instructions. For an index-only request, inspect the existing documents and limit edits to [setting up the index](#set-up-the-documentation-index).
 
 1. Inspect the affected documents, directories, and references within the requested scope, including consumers in code, tests, scripts, configuration, and sealed artifacts. Identify purpose, readers, status, authoritative sources, and unique content before merging, moving, or removing anything.
-2. Compare overlapping documents or directories by content and references. Reuse the existing topic structure where it fits. Before merging, moving, renaming, archiving, or removing existing documents or directories, present the proposed changes together. Explain what to keep, where content would go, and which references would change. Ask the user to confirm and wait for approval before applying those changes. Proceed directly with any specific changes the user has already approved.
+2. Compare overlapping documents or directories by content and references. Reuse the existing topic structure where it fits. Before merging, moving, renaming, archiving, or removing existing documents or directories, present the proposed changes together. Explain what to keep, where content would go, and which references would change. Include any references that cannot be updated in the same proposal and resolve them with the user before moving the affected records. Ask the user to confirm and wait for approval before applying those changes. Proceed directly with any specific changes the user has already approved.
 3. Consolidate overlapping files into one maintained version, carrying over unique valid content. Revise outdated explanations and confusing structure against verified sources.
-4. Move inactive documents worth retaining into the topic's archive, unless fixed-path consumers or sealed references require keeping them in place; identify such retained historical material in navigation. For mixed documents, preserve valid definitions, archive useful obsolete sections, and replace outdated action instructions in the body itself with current guidance and links to history. If a mostly obsolete document still serves a current purpose, archive its original before rewriting at the maintained path. Preserve enough context to understand archived material, reuse existing archive names, and record the date, reason, and replacement when applicable; apply the shared direction-change rules before retiring plans.
-5. Update history links in the owning maintained documents. Repair incoming links, affected file consumers, and current work pointers, then remove emptied duplicate directories. Keep old-path redirects only where references cannot be updated. Preserve references needed to trace historical decisions.
+4. Keep documents that still serve a current purpose at their existing paths. Archive selected historical sections when worth retaining, update outdated instructions in place, and link to the history from the maintained document. If the whole document is retired and worth retaining, carry forward applicable conclusions and remaining work, then move it into the topic's archive. Preserve enough context to understand the archived material, reuse existing archive names, and record the date, reason, and replacement when applicable. Apply the shared direction-change rules before retiring plans.
+5. Update affected index entries, links, file consumers, and work pointers to reach the content they reference directly. Repair relative links in moved content. After moving a whole document, remove any copies, placeholders, or redirects left at its old path, then remove emptied duplicate directories.
 6. [Set up the documentation index](#set-up-the-documentation-index), then [link it from agent instructions](#link-the-index-from-agent-instructions). Link to the index from the root README when appropriate.
 
 Use `project-docs-human` or `project-docs-agent` as appropriate to complete substantial revisions. A writing-only task does not require reorganizing the repository.
 
-Verify changed claims and links, affected file consumers, preservation of unique valid content, and consolidation of duplicate active versions. Confirm current documents have no duplicate or superseded action sections, and inactive records worth retaining are archived or explicitly retained in place. Follow the reader's intended routes from current entry points and confirm they reach authoritative, maintained information, with historical instructions clearly separated from current work. Report the changes and important unknowns.
+Verify changed claims and links, affected file consumers, preservation of unique valid content, and consolidation of duplicate active versions. Confirm current documents have no duplicate or superseded action sections. Check that references to moved content reach the archive directly and that current work remains accessible from its existing entry points. Report the changes and important unknowns.
 
 ## Set up the documentation index
 
@@ -40,7 +40,7 @@ Keep the project's existing maintenance rules. If the index lacks them, add the 
 >
 > - **Update docs before closing the task.** When project behavior, an accepted decision, or plan status changes, check the documents affected by the work. Use verified information to update outdated instructions, status, or next steps in place.
 > - **Keep documentation concise and useful.** Update a suitable existing document and create a new one only when it serves a distinct purpose. Keep the facts, constraints, and steps readers need. Maintain each fact in one place and link to that source where readers need it.
-> - **Archive inactive records.** When a record stops guiding current work, carry valid conclusions into the maintained docs and unfinished work that still applies into the current work record. Archive historical material worth keeping under its topic. Record the date and reason, and link to the replacement if one exists. If a record must stay at its original path, mark it as historical there.
+> - **Archive history worth keeping.** Keep active documents at their current paths and archive selected historical sections. Move the whole document when it is retired and worth keeping. Update references to moved content to link directly to the archive.
 > - **Keep the index focused.** Link directly to the documents readers need for common tasks, active work, or frequently consulted guidance. Put supporting links in the relevant document. After merging, moving, or archiving a document, update or remove its index entry, repair affected references, and check where they lead.
 
 ## Link the index from agent instructions
@@ -51,17 +51,13 @@ Add a short “Project documentation guide” section in the project's language,
 
 ## Example
 
-A mixed `docs/research/findings.md` contains applicable conclusions and past trials. Keep the conclusions in place, move historical detail into the topic's archive, and add a brief history entry at the end of `findings.md`. Reuse existing paths and archive names; this structure is illustrative.
+A `todo.md` can stay the entry point for current work as completed tasks accumulate. Move completed items worth retaining into the topic's archive and link to them from a brief history entry in `todo.md`. Use the project's existing paths and archive names.
 
 ```text
 docs/
 ├── README.md                  # Document entry points
-├── todo/
-│   ├── progress.md            # Current task and its history index
-│   └── archive/
-│       └── past-work.md       # Historical task records
-└── research/
-    ├── findings.md            # Applicable conclusions and their history index
+└── todo/
+    ├── todo.md                # Current work and its history index
     └── archive/
-        └── past-experiments.md # Past trials and superseded approaches
+        └── past-work.md       # Selected completed items
 ```
